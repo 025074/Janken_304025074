@@ -18,7 +18,11 @@ class Board {
     text(comment, 225, 190);
     textSize(20);
     String scoreMessage = "Score:"+game.score;
-    text(scoreMessage, 225, 200);
+    text(scoreMessage, 225, 200); 
+   textSize(20);
+   String resultMessage = "Win:"+game.win+" Draw:"+game.draw+ " Lose:"+game.lose;
+   text(resultMessage, 225, 220);
+
   }
 
   void updateResultArea(String result) {
